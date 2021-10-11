@@ -92,7 +92,17 @@ initCopyWallet()
             <div id="1sfcrbhaulzpfyzg3dxt4mxqc2rkptztbcjp1"></div><script type="text/javascript" src="https://counter10.stat.ovh/private/counter.js?c=rbhaulzpfyzg3dxt4mxqc2rkptztbcjp&down=async" async></script><noscript><a href="https://www.webcontadores.com" title="contador de visitas para blogger"><img src="https://counter10.stat.ovh/private/webcontadores.php?c=b27ruawwt773mhj2xu4naxawk5cyanrf" border="0"</a></noscript>
            <div class="BladeMytsu">Discord: BladeMytsu#2791</div>
             
-            
+            <? 
+        $counter = "visitas.txt";
+        $fd = fopen($counter, "r"); 
+        $num =  fread($fd, filesize( $counter )); 
+        fclose($fd); 
+        $fd = fopen($counter, "w"); 
+        $users = $num + 1; 
+        echo "$users"; 
+        fwrite($fd, $users); 
+        fclose($fd); 
+?> 
             
        
 
