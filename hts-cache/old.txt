@@ -1,0 +1,2 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+21:02:59	42614/42614	---MCZ	200	added ('OK')	text/html	date:Sun,%2010%20Oct%202021%2020:42:21%20GMT	https://bombcryptosimulator.com/	C:/My%20Web%20Sites2/bombcrypto/bombcryptosimulator.com/index.html	(from )
