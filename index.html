@@ -2,38 +2,44 @@
 <html>
     <head>
             <meta http-equiv=”Content-Type” content=”text/html; charset=iso-8859-1″>
-	    
-	    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        
+        <link rel="shortcut icon" type="image/x-icon" href="https://app.bombcrypto.io/favicon.ico">
     </head>
     <body>
  <title>Bomb Crypto - Hero Simulator</title>
-	    <link rel="shortcut icon" href="https://app.bombcrypto.io/webgl/TemplateData/favicon.ico">
-	    <link rel="shortcut icon" type="image/x-icon" href="https://app.bombcrypto.io/favicon.ico">
-	    
-	    
-	    
-	    
-
-	    
-	    
-	<style>
-		* {
-			margin: 10;
-			padding: 10;
-		}
-		canvas {
-			outline: none
-		}
-		html, body {
-			margin: 0;
-			background-color: #3A251D;
-			color: white;
-		}
-	</style>
+        <link rel="shortcut icon" href="https://app.bombcrypto.io/webgl/TemplateData/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="https://app.bombcrypto.io/favicon.ico">
+         
+    <style>
+        * {
+            margin: 10;
+            padding: 10;
+        }
+        canvas {
+            outline: none
+        }
+        html, body {
+            margin: 0;
+            background-color: #3A251D;
+            color: white;
+        }
+    /* Footer */
+    .footer-bg{
+      background-color: black;
+      text-align: center;
+      padding: 15px 0 10px 0;
+    }
+    .footer .BladeMytsu{
+      margin: 5px 0;
+    }
+    .carteira{
+      cursor: pointer;
+    }
+    </style>
         <div id='ruffle'></div>
         <script src='ruffle/ruffle.js'></script>
         <script>
-		
+        
 var swfobject = {};
 
 swfobject.embedSWF = function(url, cont, width, height){
@@ -43,28 +49,44 @@ swfobject.embedSWF = function(url, cont, width, height){
             height: height,
             style: 'width: ' + width + 'px; height: ' + height + 'px',
         });
-	
-	
-	window.RufflePlayer.config = {
+    
+    
+    window.RufflePlayer.config = {
     "autoplay": "on",
     "unmuteOverlay": "hidden",
     "contextMenu": false,
 }
     
     player.load({ url: url });
-	
+    
 }
 
 swfobject.embedSWF('default.swf', 'ruffle', 1200, 999);
+
+function initCopyWallet(){
+  const textCardIntroWallet = document.querySelector(".carteira")
+  textCardIntroWallet.addEventListener('click', copyWallet)
+
+  async function copyWallet() {
+    let text = "0x2f08BD0C1c42833262b88e6E20e205Bf8348002c";
+    await navigator.clipboard.writeText(text);
+    alert("Wallet Copied")
+  }
+}
+
+initCopyWallet()
+
         </script>
-	    
-	    
-	    
-	    
-	    <div id="BladeMytsu" text-align: center>   Discord: BladeMytsu#2791</div>
-	    
-	    <div id="Carteira" text-align: center>  Wallet: 0x2f08BD0C1c42833262b88e6E20e205Bf8348002c</div>
-	    <br>
-	    
+        
+        
+        <section class="footer-bg">
+        <div class="footer">
+            <div id="espa"></div><div id="sfcrbhaulzpfyzg3dxt4mxqc2rkptztbcjp"></div><script type="text/javascript" src="https://counter10.stat.ovh/private/counter.js?c=rbhaulzpfyzg3dxt4mxqc2rkptztbcjp&down=async" async></script><noscript><a href="https://www.webcontadores.com" title="contador de visitas para blogger"><img src="https://counter10.stat.ovh/private/webcontadores.php?c=b27ruawwt773mhj2xu4naxawk5cyanrf" border="0"</a></noscript>
+           <div class="BladeMytsu">Discord: BladeMytsu#2791</div>
+        
+            <div class="carteira">Wallet: 0x2f08BD0C1c42833262b88e6E20e205Bf8348002c</div>
+            <br>
+        </div>
+        </section>
     </body>
 </html>
