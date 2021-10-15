@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset='utf8'>
+    </head>
+    <body>
+ <title>Block Farm - Simulador de Farm</title>
+	    
+	    
+	    
+	    
+	    
+
+	    
+	    
+	<style>
+		* {
+			margin: 10;
+			padding: 10;
+		}
+		canvas {
+			outline: none
+		}
+		html, body {
+			margin: 0;
+			background-color: white;
+			color: black;
+		}
+	</style>
+        <div id='ruffle'></div>
+        <script src='ruffle/ruffle.js'></script>
+        <script>
+		
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
+	
+	
+	window.RufflePlayer.config = {
+    "autoplay": "on",
+    "unmuteOverlay": "hidden",
+    "contextMenu": false,
+}
+    
+    player.load({ url: url });
+	
+}
+
+swfobject.embedSWF('default.swf', 'ruffle', 665, 461);
+        </script>
+	    
+	    
+	    
+	    
+	<br>    
+<br>	    
+	    <br>
+	    <div id="BladeMytsu" text-align: center>Discord: BladeMytsu#2791</div>
+	      <div id="Carteira" text-align: center>Me pague um café: Minha Carteira: 0x2f08BD0C1c42833262b88e6E20e205Bf8348002c</div>
+	    <br>
+	    
+    </body>
+</html>
