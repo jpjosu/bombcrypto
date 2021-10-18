@@ -1,0 +1,1 @@
+{"status":6,"priceUSD":1.02536097454935,"volumeUSD":2383119.34136445,"priceChange":-26.49704393,"priceBRL":5.590268033242922,"volumeBRL":12992766.64911867,"heroes":7,"balance":158077}
